@@ -6,16 +6,18 @@
 /*   By: iel-ferk <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/03/28 15:10:44 by iel-ferk          #+#    #+#             */
-/*   Updated: 2019/03/28 15:10:47 by iel-ferk         ###   ########.fr       */
+/*   Updated: 2019/04/21 18:13:13 by iel-ferk         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 
-# include <stdio.h>
 # include <stdlib.h>
 # include <unistd.h>
+# include <sys/types.h>
+# include <sys/uio.h>
+# define BUFF_SIZE 9999
 
 typedef struct		s_list
 {
@@ -90,5 +92,7 @@ int					ft_isupper(int c);
 int					ft_isxdigit(int c);
 int					ft_isspace(int c);
 char				*ft_strrev(char *str);
+char				*ft_strnjoin(char const *s1, char const *s2, size_t n);
+int					get_next_line(int const fd, char **line);
 
 #endif
