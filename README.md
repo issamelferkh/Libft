@@ -3,7 +3,7 @@
 remarques
 =========
 for v1.1
-=> leak management
-=> cast
-=> malloc for list map
-=> security++
+* leak management
+* cast
+* malloc for list map
+* security++
